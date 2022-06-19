@@ -1,0 +1,26 @@
+body {
+  font-family: Cerebri Sans, Helvetica, Arial, sans-serif;
+  color: black;
+}
+
+p {
+  font-size: larger;
+  text-align: center;
+}
+h1 {
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 50px;
+}
+h2,
+h3 {
+  text-align: left;
+}
+
+.Current {
+  font-size: 700%;
+}
+.cloud {
+  width: 25%;
+  height: auto;
+}
