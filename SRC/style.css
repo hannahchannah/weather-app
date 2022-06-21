@@ -20,24 +20,25 @@ h3 {
 footer {
   text-align: center;
 }
-
 .locationSearch {
   text-align: center;
 }
-
 .locationSearch #location-input {
-  width: 100px;
-  padding: 10px 180px;
+  padding: 10px 100px;
+  font-size: large;
 }
 
 .locationSearch #location-submit {
   padding: 10px;
 }
 
+#current-location-button {
+  padding: 10px 10px;
+}
 #current {
   font-size: 700%;
 }
 .cloud {
-  width: 25%;
+  width: 50%;
   height: auto;
 }
