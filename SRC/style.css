@@ -24,6 +24,14 @@ li {
 footer {
   text-align: center;
 }
+
+.app-container {
+  padding: 20px;
+  border: 10px solid #ff3e80;
+  border-radius: 5px;
+  margin: 30px;
+}
+
 .locationSearch {
   text-align: center;
 }

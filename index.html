@@ -10,6 +10,7 @@
 </head>
 
 <body>
+<div class="app-container">
 <header>
 <h1>Weather App</h1>
 </header>
@@ -29,7 +30,7 @@
 <div class="col-sm-2"></div>
 <div class="col-sm-4">
 <h2 id="current"></h2>
-<img src="" alt="weather-icon" id="icon"class="float-left"/>
+<img src="" alt="Clear" id="icon"class="float-left"/>
 </div>
 <div class="col-sm-1"></div>
 <div class="col-sm-5">
@@ -42,7 +43,7 @@
     <h2 id="location"></h2> 
 <h3 id="location-date">Tuesday, 14th June 2022</h3>
     <li id="description"></li>
-    <li> Humidity: <span id="humidity">%</span></li>
+    <li> Humidity: <span id="humidity"></span>%</li>
     <li>Wind Speed: <span id="wind-speed"></span>km/h</li>
 </ul> 
 </div>
@@ -50,6 +51,11 @@
 </div>
 
  
+<br><br><br>
+ <div class="weather-forecast" id="forecast"></div>
+        </div>
+
+
 <br><br><br>
 
 <h5>
