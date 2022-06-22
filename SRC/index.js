@@ -24,10 +24,21 @@ function locationDate(date) {
 }
 
 function displayWeather(response) {
-  document.querySelector("#location").innerHTML = response.data.name;
-  document.querySelector("#current").innerHTML = Math.round(
-    response.data.main.temp
-  );
+  let locationElement = document.querySelector("#location");
+  let temperatureElement = document.querySelector("#current");
+  let descriptionElement = document.querySelector("#description");
+  let humidityElement = document.querySelector("#humidity");
+  let windElement = document.querySelector("#wind-speed");
+  let iconElement = document.querySelector("#icon");
+
+  locationElement.innerHTML = response.data.name;
+  temperatureElement.innerHTML = Math.round(response.data.main.temp);
+  descriptionElement.innerHTML = response.data.weather[0].description;
+  humidityElement.innerHTML = response.data.main.humidity;
+  windElement.innerHTML = response.data.wind.speed;
+  iconElement.setAttribute("src"),
+    `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`;
+  iconElement.setAttribute("alt", response.data.weather[0].description);
 }
 
 function searchCity(city) {

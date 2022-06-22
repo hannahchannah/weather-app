@@ -17,6 +17,10 @@ h3 {
   text-align: left;
 }
 
+li {
+  list-style: none;
+}
+
 footer {
   text-align: center;
 }
@@ -38,6 +42,11 @@ footer {
 #current {
   font-size: 700%;
 }
+
+#description {
+  text-transform: capitalize;
+}
+
 .cloud {
   width: 50%;
   height: auto;
