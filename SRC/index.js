@@ -80,7 +80,6 @@ function displayWeather(response) {
   let descriptionElement = document.querySelector("#description");
   let humidityElement = document.querySelector("#humidity");
   let windElement = document.querySelector("#wind-speed");
-  let dateElement = document.querySelector("#location-date");
   let iconElement = document.querySelector("#icon");
 
   locationElement.innerHTML = response.data.name;
@@ -88,7 +87,6 @@ function displayWeather(response) {
   descriptionElement.innerHTML = response.data.weather[0].description;
   humidityElement.innerHTML = response.data.main.humidity;
   windElement.innerHTML = Math.round(response.data.wind.speed);
-  dateElement.innerHTML = formatDay(response.data.dt * 1000);
   iconElement.setAttribute(
     "src",
     `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`

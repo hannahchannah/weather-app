@@ -13,27 +13,37 @@ h1 {
   padding-bottom: 50px;
 }
 h2,
-h3 {
+h3,
+h4 {
   text-align: left;
+  color: whitesmoke;
+  text-shadow: #ff3e80;
+  font-size: x-large;
 }
 
 li {
   list-style: none;
+  color: whitesmoke;
+  font-weight: bold;
+  font-size: larger;
 }
 
 footer {
   text-align: center;
 }
 .app-container {
-  max-width: 1500px;
+  max-width: 800px;
   margin: 30px auto;
 }
 
 .weather-container {
   padding: 20px;
-  border: 10px solid #ff3e80;
+  border: 8px solid pink;
   border-radius: 5px;
   margin: 30px;
+  background-image: url(https://images.pexels.com/photos/5326931/pexels-photo-5326931.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+  background-size: cover;
+  background-blend-mode: darken;
 }
 
 .locationSearch {
@@ -42,17 +52,20 @@ footer {
 .locationSearch #location-input {
   padding: 10px 100px;
   font-size: large;
+  border-radius: 5px;
 }
 
 .locationSearch #location-submit {
   padding: 10px;
+  border-radius: 5px;
 }
 
 #current-location-button {
   padding: 10px 10px;
+  border-radius: 5px;
 }
 #current {
-  font-size: 400%;
+  font-size: 250%;
 }
 
 #description {
@@ -62,9 +75,7 @@ footer {
 #forecast {
   padding: 20px;
   text-align: center;
-}
-
-.cloud {
-  width: 50%;
-  height: auto;
+  font-weight: bold;
+  font-size: larger;
+  color: whitesmoke;
 }
