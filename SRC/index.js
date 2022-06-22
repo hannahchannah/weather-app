@@ -81,6 +81,7 @@ function displayWeather(response) {
   let humidityElement = document.querySelector("#humidity");
   let windElement = document.querySelector("#wind-speed");
   let iconElement = document.querySelector("#icon");
+  let dateElement = document.querySelector("#location-date");
 
   locationElement.innerHTML = response.data.name;
   temperatureElement.innerHTML = Math.round(response.data.main.temp);
@@ -92,6 +93,7 @@ function displayWeather(response) {
     `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`
   );
   iconElement.setAttribute("alt", response.data.weather[0].description);
+  dateElement.innerHTML = locationDate(response.data.dt * 1000);
 
   getForecast(response.data.coord);
 }
@@ -118,10 +120,6 @@ function getCurrentlocation(event) {
   event.preventDefault();
   navigator.geolocation.getCurrentPosition(searchLocation);
 }
-
-let dateElement = document.querySelector("#location-date");
-let currentTime = new Date();
-dateElement.innerHTML = locationDate(currentTime);
 
 let searchForm = document.querySelector("#location-submit");
 searchForm.addEventListener("click", handleSubmit);
